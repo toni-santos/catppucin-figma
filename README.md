@@ -1,5 +1,7 @@
 ## catppucin-figma
 
+![](demo.png)
+
 A simple and intuitive extension that makes it easy to import catppucin color palettes to your figma projects.
 
 ## Building and running from source
