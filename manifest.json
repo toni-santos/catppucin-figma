@@ -1,0 +1,17 @@
+{
+  "name": "Catppucin",
+  "id": "1279458459545633640",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

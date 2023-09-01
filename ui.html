@@ -1,0 +1,59 @@
+<img src="./cat.png" alt="TESTIGN">
+<h2 id="title">Catppucin</h2>
+<div id="btn-wrapper">
+  <button id="create-latte"><input id="count" value="latte" disabled>Latte</button>
+  <button id="create-frappe"><input id="count" value="frappe" disabled>Frappe</button>
+  <button id="create-macchiato"><input id="count" value="macchiato" disabled>Macchiato</button>
+  <button id="create-mocha"><input id="count" value="mocha" disabled>Mocha</button>
+</div>
+<script>
+  document.querySelectorAll('button[id^="create"]').forEach((b) => {
+    b.onclick = (e) => {
+      const value = e.target.children[0].value;
+      parent.postMessage({ pluginMessage: { type: 'create-palette', value } }, '*')
+    }
+  })
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #11111b;
+    margin: 0;
+    height: 100%;
+  }
+
+  input {
+    display: none;
+  }
+
+  #title {
+    color: #cdd6f4;
+    margin: 0;
+  }
+
+  button {
+    all: unset;
+    padding: 5px;
+    color: #cdd6f4;
+    border: solid 1px #f38ba8;
+    background-color: #313244;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+</style>
