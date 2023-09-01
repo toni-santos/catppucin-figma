@@ -1,7 +1,7 @@
 {
   "name": "Catppucin",
   "version": "1.0.0",
-  "description": "Catuppucin color palettes in Figma",
+  "description": "Catppucin color palettes in Figma",
   "main": "code.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
