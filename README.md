@@ -4,6 +4,8 @@
 
 A simple and intuitive extension that makes it easy to import catppucin color palettes to your figma projects.
 
+### [Now available on figma community!](https://www.figma.com/community/plugin/1279458459545633640/Catppucin)
+
 ## Building and running from source
 
 Below are the steps to get your plugin running. You can also find instructions at:
